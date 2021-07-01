@@ -4,7 +4,7 @@ const LoginPage = () => {
     return (
         <div className="container">
             <div className="row">
-                <div className="col">
+                <div className="col d-flex justify-content-center">
                     <div className="card m-2 bg-white" style={{ "width": "500px" }}>
                         <div className="card-header">
                             <h1 class="text-center">
@@ -32,10 +32,17 @@ const LoginPage = () => {
                             </div>
 
                             <div className="row">
-                                <div className="col-md-8">
+                                <div className="col d-flex justify-content-center">
                                     <input type="button" className="btn btn-primary" value="Login" />
                                 </div>
                             </div>
+
+                            <div className="row">
+                                <div className="col d-flex justify-content-center">
+                                    <p><a href="forgot">Forgot Password?</a></p>
+                                    <p><a href="signup">Create new account?</a></p>
+                                </div>
+                            </div>                            
 
                         </div>
                     </div>
