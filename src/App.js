@@ -10,7 +10,9 @@ function App() {
     <div>
       <div className="row bg-primary">
         <div className="col">
-          <h1 className="text-white ps-3">CRUD APP</h1>
+          <a href="home">
+            <h1 className="text-white ps-3">CRUD APP</h1>
+          </a>
         </div>
         <div className="col">
 
