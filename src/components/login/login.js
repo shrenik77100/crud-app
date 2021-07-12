@@ -57,7 +57,7 @@ const LoginPage = () => {
 
                             <div className="row">
                                 <div className="col-md-12">
-                                  <a href="#">Forgot Password?</a>                                   
+                                  <a href="forgotpw">Forgot Password?</a>                                   
                                 </div>
                             </div>                                                         
 
