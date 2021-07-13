@@ -1,5 +1,5 @@
 import {React,useState} from 'react'
-import fetch from 'isomorphic-fetch';
+import axios from 'axios';
 
 const SignUpPage = () => {
     
@@ -36,7 +36,7 @@ const SignUpPage = () => {
     const doSignUp = () => {
         console.log("in signup, " + JSON.stringify(userSignUpRec, null,3));
         
-        fetch("http://localhost:3002/api/user/create",{header:{"Content-type":"application/json"}, method:"POST", body:userSignUpRec})
+        axios.post("http://localhost:3002/api/user/create", userSignUpRec)
         .then((response)=>{
             console.log(JSON.stringify(response, null,3));
         })
